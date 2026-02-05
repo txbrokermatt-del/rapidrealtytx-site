@@ -12,9 +12,9 @@ a{color:inherit;text-decoration:none}
 .nav ul{display:flex;list-style:none;gap:25px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
 .nav li a{font-weight:600;font-size:15px;color:#1f2937;}
 .nav li a:hover{color:var(--primary)}
-.hero{background:linear-gradient(rgba(11,45,82,.88),rgba(11,45,82,.88));color:#fff;padding:90px 0}
-.hero h1{font-size:42px;margin-bottom:15px;letter-spacing:-.5px}
-.hero p{font-size:18px;max-width:620px;opacity:.95}
+.hero{background:linear-gradient(rgba(11,45,82,.92),rgba(11,45,82,.92));color:#fff;padding:120px 0 110px;}
+.hero h1{font-size:48px;font-weight:800;margin-bottom:18px;letter-spacing:-.8px;max-width:760px;}
+.hero p{font-size:19px;max-width:700px;opacity:.92;}
 .section{padding:70px 0}
 .section.alt{background:var(--light)}
 .section h2{font-size:30px;color:var(--primary);margin-bottom:10px}
