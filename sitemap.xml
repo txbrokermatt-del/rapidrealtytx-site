@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.rapidrealtytx.com/</loc></url>
+  <url>
+    <loc>https://www.rapidrealtytx.com/</loc>
+    <priority>1.0</priority>
+  </url>
   <url><loc>https://www.rapidrealtytx.com/buy.html</loc></url>
   <url><loc>https://www.rapidrealtytx.com/sell.html</loc></url>
-  <url><loc>https://www.rapidrealtytx.com/agents.html</loc></url>
   <url><loc>https://www.rapidrealtytx.com/join.html</loc></url>
+  <url><loc>https://www.rapidrealtytx.com/agents.html</loc></url>
   <url><loc>https://www.rapidrealtytx.com/cities.html</loc></url>
+
+  <!-- Add city pages -->
   <url><loc>https://www.rapidrealtytx.com/city-frisco.html</loc></url>
   <url><loc>https://www.rapidrealtytx.com/city-plano.html</loc></url>
   <url><loc>https://www.rapidrealtytx.com/city-mckinney.html</loc></url>
-  <url><loc>https://www.rapidrealtytx.com/blog.html</loc></url>
-  <url><loc>https://www.rapidrealtytx.com/post-market-update-1.html</loc></url>
 </urlset>
-
