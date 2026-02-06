@@ -151,3 +151,68 @@ hr.sep{border:0;border-top:1px solid rgba(255,255,255,.15);margin:10px 0}
   object-fit: contain;
   display: block;
 }
+/* =========================
+   HUBSPOT FORM STYLING
+   ========================= */
+#hs-join-form form { margin-top: 12px; }
+#hs-join-form .hs-form-field { margin-bottom: 12px; }
+
+#hs-join-form label{
+  font-weight: 800;
+  font-size: 13px;
+  color: #0f172a;
+  display: block;
+  margin-bottom: 6px;
+}
+
+#hs-join-form input[type="text"],
+#hs-join-form input[type="email"],
+#hs-join-form input[type="tel"],
+#hs-join-form input[type="number"],
+#hs-join-form select,
+#hs-join-form textarea{
+  width: 100% !important;
+  padding: 12px 12px !important;
+  border: 1px solid #cfd6df !important;
+  border-radius: 12px !important;
+  font-size: 14px !important;
+  background: #fff !important;
+  color: #0f172a !important;
+}
+
+#hs-join-form textarea{
+  min-height: 120px !important;
+  resize: vertical !important;
+}
+
+#hs-join-form .hs-button{
+  display: inline-block !important;
+  padding: 12px 18px !important;
+  border-radius: 10px !important;
+  font-weight: 900 !important;
+  background: var(--accent) !important;
+  color: #0b0b0b !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+#hs-join-form .hs-button:hover{
+  filter: brightness(.96) !important;
+}
+
+#hs-join-form .hs-error-msgs,
+#hs-join-form .hs-error-msg{
+  color: #b91c1c !important;
+  font-size: 12px !important;
+  margin-top: 6px !important;
+}
+
+#hs-join-form .legal-consent-container,
+#hs-join-form .hs-richtext{
+  color: var(--muted) !important;
+  font-size: 12px !important;
+}
+
+#hs-join-form .hs-form-required{
+  color: #b91c1c !important;
+}
