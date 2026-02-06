@@ -250,3 +250,62 @@ hr.sep{border:0;border-top:1px solid rgba(255,255,255,.15);margin:10px 0}
 #hs-join-form form {
   overflow: visible !important;
 }
+/* -----------------------------
+   HubSpot Form (Join page) fixes
+------------------------------ */
+
+/* Make sure the HubSpot form container can show everything */
+#hs-join-form,
+#hs-join-form .hs-form {
+  width: 100% !important;
+  overflow: visible !important;
+}
+
+/* Ensure submit area is visible */
+#hs-join-form .hs-submit,
+#hs-join-form .hs-form .hs_submit,
+#hs-join-form .hs-form .actions {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  height: auto !important;
+  overflow: visible !important;
+  margin-top: 14px !important;
+}
+
+/* Force the actual submit button to show */
+#hs-join-form .hs-button,
+#hs-join-form input[type="submit"],
+#hs-join-form button[type="submit"] {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  width: auto !important;
+}
+
+/* Optional: style HubSpot submit button to match your gold button */
+#hs-join-form .hs-button,
+#hs-join-form input[type="submit"],
+#hs-join-form button[type="submit"] {
+  background: var(--accent) !important;
+  color: #0b0b0b !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 12px 18px !important;
+  font-weight: 800 !important;
+  cursor: pointer !important;
+}
+
+/* Optional: make inputs consistent */
+#hs-join-form input[type="text"],
+#hs-join-form input[type="email"],
+#hs-join-form input[type="tel"],
+#hs-join-form select,
+#hs-join-form textarea {
+  width: 100% !important;
+  padding: 12px 12px !important;
+  border: 1px solid #cfd6df !important;
+  border-radius: 12px !important;
+  font-size: 14px !important;
+  background: #fff !important;
+}
