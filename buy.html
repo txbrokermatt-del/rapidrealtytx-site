@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- HubSpot Forms (load once) -->
-  <script defer src="https://js.hsforms.net/forms/v2.js"></script>
-
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -12,8 +9,9 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Buy a Home in Texas | Rapid Realty TX</title>
-  <meta name="description" content="Buy a home in Texas with expert strategy, showings, offer positioning, and negotiation. Serving DFW and Texas markets." />
+  <meta name="description" content="Buyer strategy, tour plans, offer positioning, and inspection negotiation across DFW and major Texas markets." />
 
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -22,17 +20,19 @@
 
 <header class="topbar">
   <div class="container">
-    <span>Frisco, Texas</span>
-    <span>Call/Text: <a href="tel:4696451011">469-645-1011</a></span>
+    <span id="topbar-loc">Loading location...</span>
+    <span>Call/Text: <a href="tel:4696451011">469-645-1011</a> • <a href="mailto:txbrokermatt@gmail.com">txbrokermatt@gmail.com</a></span>
   </div>
 </header>
 
 <nav class="nav">
   <div class="container nav-flex">
     <a class="logo" href="/">
-      <img src="/assets/images/logo.png" alt="Rapid Realty TX">
+      <img src="/assets/images/logo.png" alt="Rapid Realty TX" />
     </a>
+
     <button class="hamburger" data-menu-btn>Menu</button>
+
     <ul class="menu" data-menu>
       <li><a href="/buy.html">Buy</a></li>
       <li><a href="/sell.html">Sell</a></li>
@@ -40,102 +40,165 @@
       <li><a href="/join.html">Join</a></li>
       <li><a href="/cities.html">Cities</a></li>
       <li><a href="/blog.html">Blog</a></li>
-      <li><a class="btn primary" href="#buy-form">Contact</a></li>
+      <li><a class="btn primary" href="/#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
 
+<section class="hero" style="padding:90px 0 70px;">
+  <div class="container">
+    <div class="kicker">Texas Buyers • Strategy First • Broker-Led</div>
+    <div class="spacer"></div>
+    <h1>Buy Smart in Texas.<br>Win Offers Without Overpaying.</h1>
+    <p>
+      We help buyers build a plan, tour efficiently, write strong offers, and negotiate inspections with confidence.
+      Broker-led guidance from search to closing across DFW and major Texas markets.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="/#contact">Get a Buyer Strategy Call</a>
+      <a class="btn outline" href="/cities.html">Browse Cities</a>
+    </div>
+    <div class="spacer"></div>
+    <div class="small">Rapid Realty LLC (Lic #0594104) • Broker: Matt Anderson (Lic #0514432)</div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container split">
-
-    <!-- LEFT CONTENT -->
     <div>
-      <div class="h2">Buy a Home in Texas</div>
-      <div class="lede">
-        Fast tours, strong offers, and smart negotiation — built to get you the right home at the right terms.
-      </div>
+      <div class="h2">Buyer Strategy</div>
+      <div class="lede">A clean process built for speed and leverage.</div>
 
       <ul class="list">
-        <li><span class="check">✓</span><span><strong>Tour Plan</strong> that saves time and finds the right inventory fast.</span></li>
-        <li><span class="check">✓</span><span><strong>Offer Strategy</strong> focused on leverage and seller psychology.</span></li>
-        <li><span class="check">✓</span><span><strong>Inspection & Repairs</strong> negotiated to reduce risk and protect budget.</span></li>
-        <li><span class="check">✓</span><span><strong>Local Guidance</strong> across DFW and growth corridors.</span></li>
+        <li><span class="check">✓</span><span><strong>Tour Plan</strong> that saves time and targets the right inventory.</span></li>
+        <li><span class="check">✓</span><span><strong>Offer Strategy</strong> based on comps, seller psychology, and clean terms.</span></li>
+        <li><span class="check">✓</span><span><strong>Inspection Negotiation</strong> that protects your budget and reduces risk.</span></li>
+        <li><span class="check">✓</span><span><strong>Financing + Timing</strong> guidance so you close smoothly and on schedule.</span></li>
       </ul>
 
       <div class="spacer"></div>
-
-      <div class="card">
-        <h3>What We’ll Cover</h3>
-        <p class="muted">Bring these to your first call.</p>
-        <div class="spacer"></div>
-        <div class="grid">
-          <div class="badge">Budget</div>
-          <div class="badge">Loan/Pre-Approval</div>
-          <div class="badge">Areas & Commute</div>
-          <div class="badge">Must-Haves</div>
-          <div class="badge">Offer Terms</div>
-          <div class="badge">Closing Timeline</div>
-        </div>
-      </div>
+      <a class="btn primary" href="/#contact">Talk to the Broker</a>
     </div>
 
-    <!-- RIGHT FORM -->
-    <div class="card" id="buy-form">
-      <h3>Get a Buyer Strategy Call</h3>
-      <p class="muted">Fill this out and we’ll follow up quickly.</p>
-
-      <!-- HubSpot Form -->
-      <div id="hs-buy-form"></div>
-
-      <!-- Fallback -->
+    <div class="card">
+      <h3>Buyer Prep Checklist</h3>
+      <p class="muted">Have these ready for your first call.</p>
       <div class="spacer"></div>
-      <a class="btn outline"
-         href="mailto:txbrokermatt@gmail.com?subject=Buyer%20Inquiry%20-%20Rapid%20Realty%20TX&body=Name:%0AEmail:%0APhone:%0AAreas%20of%20Interest:%0ABudget:%0ATimeline:%0AMessage:">
-        Email the Broker (Fallback)
-      </a>
-
-      <script>
-        function renderBuyForm() {
-          if (window.hbspt && window.hbspt.forms) {
-            window.hbspt.forms.create({
-              region: "na1",
-              portalId: "245097975",
-              formId: "54ffd9d9-7fcc-4f2c-a5cf-e27b061a2e3b",
-              target: "#hs-buy-form"
-            });
-            return true;
-          }
-          return false;
-        }
-
-        window.addEventListener("load", function () {
-          if (renderBuyForm()) return;
-
-          const start = Date.now();
-          const t = setInterval(() => {
-            if (renderBuyForm()) clearInterval(t);
-            if (Date.now() - start > 8000) clearInterval(t);
-          }, 200);
-        });
-      </script>
-
-      <div class="muted" style="font-size:12px; margin-top:10px">
-        By submitting, you agree to be contacted by call/text/email. Msg/data rates may apply.
+      <div class="grid">
+        <div class="badge">Pre-approval / Proof of funds</div>
+        <div class="badge">Target areas</div>
+        <div class="badge">Must-haves</div>
+        <div class="badge">Timeline</div>
+        <div class="badge">Budget comfort</div>
+        <div class="badge">Offer flexibility</div>
       </div>
     </div>
+  </div>
+</section>
 
+<section class="section alt">
+  <div class="container">
+    <div class="h2">What You Get</div>
+    <div class="lede">Broker-led support, clear communication, and strong negotiation.</div>
+    <div class="spacer"></div>
+
+    <div class="grid cols-3">
+      <div class="card">
+        <h3>Fast Answers</h3>
+        <p>Contract and strategy questions answered quickly so you can move decisively.</p>
+      </div>
+      <div class="card">
+        <h3>Clean Execution</h3>
+        <p>Deadlines tracked, paperwork tight, and a process that keeps you protected.</p>
+      </div>
+      <div class="card">
+        <h3>Strong Negotiation</h3>
+        <p>We focus on price, terms, repairs, and concessions that actually matter.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <footer class="footer">
   <div class="container">
-    <div><strong>Rapid Realty TX</strong></div>
-    <div class="small">
-      Rapid Realty LLC (Lic #0594104) • Broker: Matt Anderson (Lic #0514432)
-    </div>
+    <div><strong>Rapid Realty TX</strong> — Texas Real Estate Brokerage</div>
+    <div class="small">Rapid Realty LLC (Lic #0594104) • Broker: Matt Anderson (Lic #0514432)</div>
   </div>
 </footer>
 
 <script src="/assets/js/site.js"></script>
+
+<!-- Time / Location / Temp -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const el = document.getElementById("topbar-loc");
+  if (!el) return;
+
+  function formatTime(d) {
+    return d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+  }
+
+  function startClock(prefixText = "") {
+    const tick = () => {
+      const t = formatTime(new Date());
+      el.textContent = prefixText ? `${prefixText} • ${t}` : `Local time: ${t}`;
+    };
+    tick();
+    setInterval(tick, 30000);
+  }
+
+  async function getCityState(lat, lon) {
+    const url = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${encodeURIComponent(lat)}&longitude=${encodeURIComponent(lon)}&localityLanguage=en`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Reverse geocode failed");
+    const data = await res.json();
+    const city =
+      data.city ||
+      data.locality ||
+      data.principalSubdivisionCode ||
+      data.principalSubdivision ||
+      "Your area";
+    const state = data.principalSubdivision || "";
+    return state ? `${city}, ${state}` : city;
+  }
+
+  async function getTempF(lat, lon) {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${encodeURIComponent(lat)}&longitude=${encodeURIComponent(lon)}&current=temperature_2m&temperature_unit=fahrenheit`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Weather fetch failed");
+    const data = await res.json();
+    const temp = data?.current?.temperature_2m;
+    if (typeof temp !== "number") throw new Error("Temp missing");
+    return Math.round(temp);
+  }
+
+  async function runWithCoords(lat, lon) {
+    startClock("Finding your area");
+
+    try {
+      const [place, tempF] = await Promise.all([
+        getCityState(lat, lon),
+        getTempF(lat, lon)
+      ]);
+
+      const prefix = `${place} • ${tempF}°F`;
+      startClock(prefix);
+    } catch (e) {
+      startClock("Local time");
+    }
+  }
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (pos) => runWithCoords(pos.coords.latitude, pos.coords.longitude),
+      () => startClock("Local time"),
+      { enableHighAccuracy: true, timeout: 8000, maximumAge: 300000 }
+    );
+  } else {
+    startClock("Local time");
+  }
+});
+</script>
+
 </body>
 </html>
