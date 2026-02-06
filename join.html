@@ -9,20 +9,17 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Join Rapid Realty TX | Agent Plans: Silver & Gold</title>
   <meta name="description" content="Join Rapid Realty TX with simple, transparent agent plans. Choose Silver ($0/mo + $500/transaction) or Gold ($99/mo + $99/transaction). E&O $50/quarter. All leases $99." />
 
   <link rel="stylesheet" href="/assets/css/style.css">
 
-  <!-- HubSpot Forms (load once) -->
+  <!-- HubSpot Forms -->
   <script defer src="https://js.hsforms.net/forms/v2.js"></script>
 
   <style>
-    /* Keep logo from ever blowing up */
-    .logo { display:flex; align-items:center; max-height:56px; }
-    .logo img { height:42px; width:auto; max-width:180px; object-fit:contain; display:block; }
-
-    /* HubSpot form styling + FORCE submit button visible */
+    /* Light styling for HubSpot submit button + inputs to match site */
     #hs-join-form .hs-form input,
     #hs-join-form .hs-form select,
     #hs-join-form .hs-form textarea {
@@ -34,10 +31,8 @@
       background: #fff !important;
       box-sizing: border-box !important;
     }
-    #hs-join-form .hs-form textarea { min-height: 120px !important; resize: vertical !important; }
+    #hs-join-form .hs-form textarea { min-height: 120px !important; }
 
-    /* HubSpot sometimes uses input[type=submit] */
-    #hs-join-form .hs-form input[type="submit"],
     #hs-join-form .hs-form .hs-button {
       display: inline-block !important;
       padding: 12px 18px !important;
@@ -47,10 +42,6 @@
       color: #0b0b0b !important;
       border: none !important;
       cursor: pointer !important;
-      width: auto !important;
-      margin-top: 10px !important;
-      appearance: none !important;
-      -webkit-appearance: none !important;
     }
 
     #hs-join-form .hs-error-msg,
@@ -66,7 +57,7 @@
 
 <header class="topbar">
   <div class="container">
-    <span>Frisco, Texas</span>
+    <span id="topbar-loc">Loading location...</span>
     <span>Call/Text: <a href="tel:4696451011">469-645-1011</a> • <a href="mailto:txbrokermatt@gmail.com">txbrokermatt@gmail.com</a></span>
   </div>
 </header>
@@ -199,6 +190,69 @@
   </div>
 </section>
 
+<!-- WHY JOIN -->
+<section class="section alt">
+  <div class="container split">
+    <div>
+      <div class="h2">Why Agents Join Rapid Realty TX</div>
+      <div class="lede">Built for speed, clarity, and growth in the Texas market.</div>
+
+      <ul class="list">
+        <li><span class="check">✓</span><span><strong>Broker-led support</strong> when you need it (contracts, negotiation, strategy).</span></li>
+        <li><span class="check">✓</span><span><strong>Simple plan options</strong> that stay predictable as you scale.</span></li>
+        <li><span class="check">✓</span><span><strong>Professional brand</strong> to recruit and convert online.</span></li>
+        <li><span class="check">✓</span><span><strong>Texas focus</strong> across DFW and growth corridors.</span></li>
+      </ul>
+
+      <div class="spacer"></div>
+      <a class="btn primary" href="#apply">Schedule a Call</a>
+      <a class="btn outline" href="/agents.html" style="margin-left:10px">Meet the Team</a>
+    </div>
+
+    <div class="card">
+      <h3>Best Fit For</h3>
+      <p class="muted">Agents who want a clean model and broker support without noise.</p>
+      <div class="spacer"></div>
+      <div class="grid">
+        <div class="badge">New agents</div>
+        <div class="badge">Top producers</div>
+        <div class="badge">Relocation</div>
+        <div class="badge">Investors</div>
+        <div class="badge">Luxury</div>
+        <div class="badge">Recruiters</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="h2">FAQ</div>
+    <div class="lede">Quick answers to common questions.</div>
+    <div class="spacer"></div>
+
+    <div class="grid cols-2">
+      <div class="card">
+        <h3>Are leases really $99?</h3>
+        <p>Yes — leases are $99 on both Silver and Gold.</p>
+      </div>
+      <div class="card">
+        <h3>What is E&amp;O?</h3>
+        <p>E&amp;O insurance is charged on both plans at $50 per quarter.</p>
+      </div>
+      <div class="card">
+        <h3>Can I switch plans?</h3>
+        <p>Yes — ask during onboarding and we’ll walk through the timing.</p>
+      </div>
+      <div class="card">
+        <h3>Do you provide leads?</h3>
+        <p>We can add lead/tech options later. This page focuses on a clear, transparent fee model.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- APPLY -->
 <section class="section alt" id="apply">
   <div class="container split">
@@ -223,7 +277,6 @@
       <p class="muted">Fill this out and we’ll follow up quickly.</p>
 
       <div id="hs-join-form"></div>
-
       <div id="hs-fallback" class="muted" style="display:none; margin-top:12px; font-size:13px;">
         Having trouble loading the form? Use the “Email the Broker (Fallback)” button.
       </div>
@@ -274,5 +327,78 @@
 </footer>
 
 <script src="/assets/js/site.js"></script>
+
+<!-- Time / Location / Temp -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const el = document.getElementById("topbar-loc");
+  if (!el) return;
+
+  function formatTime(d) {
+    return d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+  }
+
+  function startClock(prefixText = "") {
+    const tick = () => {
+      const t = formatTime(new Date());
+      el.textContent = prefixText ? `${prefixText} • ${t}` : `Local time: ${t}`;
+    };
+    tick();
+    setInterval(tick, 30000);
+  }
+
+  async function getCityState(lat, lon) {
+    const url = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${encodeURIComponent(lat)}&longitude=${encodeURIComponent(lon)}&localityLanguage=en`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Reverse geocode failed");
+    const data = await res.json();
+    const city =
+      data.city ||
+      data.locality ||
+      data.principalSubdivisionCode ||
+      data.principalSubdivision ||
+      "Your area";
+    const state = data.principalSubdivision || "";
+    return state ? `${city}, ${state}` : city;
+  }
+
+  async function getTempF(lat, lon) {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${encodeURIComponent(lat)}&longitude=${encodeURIComponent(lon)}&current=temperature_2m&temperature_unit=fahrenheit`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Weather fetch failed");
+    const data = await res.json();
+    const temp = data?.current?.temperature_2m;
+    if (typeof temp !== "number") throw new Error("Temp missing");
+    return Math.round(temp);
+  }
+
+  async function runWithCoords(lat, lon) {
+    startClock("Finding your area");
+
+    try {
+      const [place, tempF] = await Promise.all([
+        getCityState(lat, lon),
+        getTempF(lat, lon)
+      ]);
+
+      const prefix = `${place} • ${tempF}°F`;
+      startClock(prefix);
+    } catch (e) {
+      startClock("Local time");
+    }
+  }
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (pos) => runWithCoords(pos.coords.latitude, pos.coords.longitude),
+      () => startClock("Local time"),
+      { enableHighAccuracy: true, timeout: 8000, maximumAge: 300000 }
+    );
+  } else {
+    startClock("Local time");
+  }
+});
+</script>
+
 </body>
 </html>
