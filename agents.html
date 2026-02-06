@@ -1,1 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Agents | Rapid Realty TX</title>
+  <meta name="description" content="Join Rapid Realty TX — family-oriented culture, transparent plans, broker-direct support, and a growth path from agent to team leader or associate broker." />
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- HubSpot Forms (same working approach as join page) -->
+  <script defer src="https://js.hsforms.net/forms/v2.js"></script>
+
+  <style>
+    /* Make HubSpot form match your site */
+    #hs-agent-form .hs-form input,
+    #hs-agent-form .hs-form select,
+    #hs-agent-form .hs-form textarea{
+      width:100% !important;
+      padding:12px 12px !important;
+      border:1px solid #cfd6df !important;
+      border-radius:12px !important;
+      font-size:14px !important;
+      background:#fff !important;
+      box-sizing:border-box !important;
+    }
+    #hs-agent-form .hs-form textarea{min-height:120px !important;}
+    #hs-agent-form .hs-form .hs-button{
+      display:inline-block !important;
+      padding:12px 18px !important;
+      border-radius:10px !important;
+      font-weight:800 !important;
+      background:var(--accent) !important;
+      color:#0b0b0b !important;
+      border:none !important;
+      cursor:pointer !important;
+    }
+    #hs-agent-form .hs-error-msg,
+    #hs-agent-form .hs-error-msgs label{
+      color:#b91c1c !important;
+      font-size:13px !important;
+      font-weight:600 !important;
+    }
+
+    /* Agents-specific quick styling helpers */
+    .pill-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);padding:10px 12px;border-radius:999px;background:#fff;font-weight:800;font-size:12px}
+    .metric{display:grid;gap:6px}
+    .metric strong{font-size:28px;line-height:1;color:var(--primary)}
+    .metric span{color:var(--muted);font-size:13px}
+    .step{display:flex;gap:12px;align-items:flex-start}
+    .step .num{width:34px;height:34px;border-radius:12px;background:rgba(201,162,77,.18);display:grid;place-items:center;font-weight:900}
+    .step p{margin-top:4px}
+  </style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="container">
+    <span id="topbar-loc">Loading location...</span>
+    <span>Call/Text: <a href="tel:4696451011">469-645-1011</a> • <a href="mailto:txbrokermatt@gmail.com">txbrokermatt@gmail.com</a></span>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="container nav-flex">
+    <a class="logo" href="/">
+      <img src="/assets/images/logo.png" alt="Rapid Realty TX" />
+    </a>
+
+    <button class="hamburger" type="button" data-menu-btn>Menu</button>
+
+    <ul class="menu" data-menu>
+      <li><a href="/buy.html">Buy</a></li>
+      <li><a href="/sell.html">Sell</a></li>
+      <li><a href="/agents.html">Agents</a></li>
+      <li><a href="/join.html">Join</a></li>
+      <li><a href="/cities.html">Cities</a></li>
+      <li><a href="/blog.html">Blog</a></li>
+      <li><a class="btn primary" href="#apply">Apply</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="kicker">Family-Oriented • Broker-Direct • Built to Scale</div>
+    <div class="spacer"></div>
+    <h1>Join a Texas Brokerage<br>That Helps You Thrive</h1>
+    <p>
+      Rapid Realty TX is built for agents who want transparent fees, real support, and a clear growth path—from
+      solo agent to team leader and beyond. Keep more of what you earn while building a business you’re proud of.
+    </p>
+
+    <div class="cta">
+      <a class="btn primary" href="#plans">See Plans</a>
+      <a class="btn outline" href="#apply">Talk to the Broker</a>
+    </div>
+
+    <div class="pill-row">
+      <div class="pill">✓ Family-oriented culture</div>
+      <div class="pill">✓ Save money (no confusing splits)</div>
+      <div class="pill">✓ Broker-direct support</div>
+      <div class="pill">✓ Growth path to leadership</div>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="small">Rapid Realty LLC (Lic #0594104) • Broker: Matt Anderson (Lic #0514432)</div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section alt" id="values">
+  <div class="container">
+    <div class="h2">Our Values</div>
+    <div class="lede">A brokerage should feel like support—not noise. Here’s what we stand for.</div>
+    <div class="spacer"></div>
+
+    <div class="grid cols-3">
+      <div class="card">
+        <h3>Family-Oriented</h3>
+        <p class="muted">We protect your time and prioritize the people behind the production.</p>
+      </div>
+      <div class="card">
+        <h3>Clarity Over Complexity</h3>
+        <p class="muted">Transparent plans and predictable fees—so you can run the numbers.</p>
+      </div>
+      <div class="card">
+        <h3>Growth Mindset</h3>
+        <p class="muted">Systems and accountability designed to help you level up year over year.</p>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="grid cols-3">
+      <div class="card">
+        <h3>Broker-Direct Support</h3>
+        <p class="muted">Contract questions, negotiation strategy, and leadership when it matters.</p>
+      </div>
+      <div class="card">
+        <h3>Professional Standards</h3>
+        <p class="muted">Clean execution, clear communication, and a brand you’re proud to represent.</p>
+      </div>
+      <div class="card">
+        <h3>Long-Term Business</h3>
+        <p class="muted">Not just transactions—repeat clients, referrals, and scalable operations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS SUMMARY -->
+<section class="section" id="plans">
+  <div class="container">
+    <div class="h2">Simple Plans That Save You Money</div>
+    <div class="lede">
+      Choose the plan that matches your production. All leases are <strong>$99</strong>. E&amp;O is <strong>$50/quarter</strong> on both plans.
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="grid cols-2">
+      <div class="card">
+        <div class="badge">Silver Plan</div>
+        <div class="spacer"></div>
+        <h3 style="font-size:22px">Pay as you go</h3>
+        <p class="muted">Best for newer agents or lower volume—no monthly cost.</p>
+
+        <div class="spacer"></div>
+        <div style="font-size:34px;font-weight:900;color:var(--primary)">$0<span style="font-size:14px;font-weight:700;color:var(--muted)">/month</span></div>
+        <div style="font-size:16px;margin-top:6px"><strong>$500</strong> per transaction</div>
+
+        <div class="spacer"></div>
+        <ul class="list">
+          <li><span class="check">✓</span><span><strong>E&amp;O:</strong> $50/quarter</span></li>
+          <li><span class="check">✓</span><span><strong>Leases:</strong> $99 flat</span></li>
+          <li><span class="check">✓</span><span>Broker-direct guidance</span></li>
+          <li><span class="check">✓</span><span>Predictable costs</span></li>
+        </ul>
+
+        <div class="spacer"></div>
+        <a class="btn outline" href="#apply">Apply for Silver</a>
+      </div>
+
+      <div class="card" style="border:2px solid rgba(201,162,77,.55)">
+        <div class="badge">Gold Plan</div>
+        <div class="spacer"></div>
+        <h3 style="font-size:22px">Best for producers</h3>
+        <p class="muted">Lower per-transaction cost—ideal once you’re closing consistently.</p>
+
+        <div class="spacer"></div>
+        <div style="font-size:34px;font-weight:900;color:var(--primary)">$99<span style="font-size:14px;font-weight:700;color:var(--muted)">/month</span></div>
+        <div style="font-size:16px;margin-top:6px"><strong>$99</strong> per transaction</div>
+
+        <div class="spacer"></div>
+        <ul class="list">
+          <li><span class="check">✓</span><span><strong>E&amp;O:</strong> $50/quarter</span></li>
+          <li><span class="check">✓</span><span><strong>Leases:</strong> $99 flat</span></li>
+          <li><span class="check">✓</span><span>Built for scaling volume</span></li>
+          <li><span class="check">✓</span><span>Recruiting-friendly model</span></li>
+        </ul>
+
+        <div class="spacer"></div>
+        <a class="btn primary" href="#apply">Apply for Gold</a>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="grid cols-3">
+      <div class="card metric">
+        <strong>$0</strong>
+        <span>Silver monthly fee</span>
+      </div>
+      <div class="card metric">
+        <strong>$99</strong>
+        <span>Gold monthly fee</span>
+      </div>
+      <div class="card metric">
+        <strong>$50</strong>
+        <span>E&amp;O per quarter (both)</span>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="card">
+      <h3>Want a quick break-even?</h3>
+      <p class="muted">Gold often makes sense once you’re closing consistently. If you want, we can add a break-even calculator on this page later.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT + SYSTEMS -->
+<section class="section alt" id="support">
+  <div class="container split">
+    <div>
+      <div class="h2">Broker-Direct Support That Actually Helps</div>
+      <div class="lede">Fast answers, cleaner contracts, and stronger negotiation—without drama.</div>
+
+      <ul class="list">
+        <li><span class="check">✓</span><span><strong>Contract & compliance</strong> clarity (Texas-specific guidance)</span></li>
+        <li><span class="check">✓</span><span><strong>Offer & negotiation</strong> strategy that protects terms and timelines</span></li>
+        <li><span class="check">✓</span><span><strong>Inspection & repair</strong> planning to reduce surprises</span></li>
+        <li><span class="check">✓</span><span><strong>Business coaching</strong> on pipelines, follow-up, and systems</span></li>
+      </ul>
+
+      <div class="spacer"></div>
+      <a class="btn primary" href="#apply">Schedule a Call</a>
+      <a class="btn outline" href="/join.html" style="margin-left:10px">See Join Page</a>
+    </div>
+
+    <div class="card">
+      <h3>Who we’re a fit for</h3>
+      <p class="muted">Agents who want a clean model and real support.</p>
+      <div class="spacer"></div>
+      <div class="grid">
+        <div class="badge">New agents</div>
+        <div class="badge">Top producers</div>
+        <div class="badge">Relocation</div>
+        <div class="badge">Investors</div>
+        <div class="badge">Luxury</div>
+        <div class="badge">Recruiters</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GROWTH PATH -->
+<section class="section" id="growth">
+  <div class="container">
+    <div class="h2">A Growth Path From Agent to Leader</div>
+    <div class="lede">We help you build a real business—not just chase deals.</div>
+    <div class="spacer"></div>
+
+    <div class="grid cols-3">
+      <div class="card">
+        <div class="step">
+          <div class="num">1</div>
+          <div>
+            <h3>Solo Agent</h3>
+            <p class="muted">Dial in your foundation: scripts, follow-up, database, and consistent lead gen.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="step">
+          <div class="num">2</div>
+          <div>
+            <h3>Team Leader</h3>
+            <p class="muted">Build repeatable systems, delegate tasks, and recruit with a simple fee model.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="step">
+          <div class="num">3</div>
+          <div>
+            <h3>Associate Broker</h3>
+            <p class="muted">Grow into leadership with higher-level oversight and long-term career positioning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="card">
+      <h3>Family-oriented + high standards</h3>
+      <p class="muted">
+        You can build aggressively and still protect your time and values. That’s the culture we’re building at Rapid Realty TX.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section alt">
+  <div class="container">
+    <div class="h2">FAQ</div>
+    <div class="lede">Quick answers to common agent questions.</div>
+    <div class="spacer"></div>
+
+    <div class="grid cols-2">
+      <div class="card">
+        <h3>Are leases really $99?</h3>
+        <p class="muted">Yes — leases are $99 on both Silver and Gold.</p>
+      </div>
+      <div class="card">
+        <h3>What is E&amp;O?</h3>
+        <p class="muted">E&amp;O insurance is $50 per quarter on both plans.</p>
+      </div>
+      <div class="card">
+        <h3>Can I switch plans?</h3>
+        <p class="muted">Yes—ask during onboarding and we’ll walk through timing and billing cycles.</p>
+      </div>
+      <div class="card">
+        <h3>Do you provide leads?</h3>
+        <p class="muted">We can add lead/tech options later. This page focuses on a clean, transparent model.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLY -->
+<section class="section" id="apply">
+  <div class="container split">
+    <div>
+      <div class="h2">Become a Rapid Realty TX Agent</div>
+      <div class="lede">Tell us about your business and which plan you prefer. We’ll follow up quickly.</div>
+      <div class="spacer"></div>
+
+      <div class="card">
+        <h3>Direct Contact</h3>
+        <p><strong>Call/Text:</strong> <a href="tel:4696451011">469-645-1011</a></p>
+        <p><strong>Email:</strong> <a href="mailto:txbrokermatt@gmail.com">txbrokermatt@gmail.com</a></p>
+        <p class="muted small">Rapid Realty LLC (Lic #0594104) • Broker: Matt Anderson (Lic #0514432)</p>
+      </div>
+
+      <div class="spacer"></div>
+      <a class="btn outline" href="/join.html#apply">Go to Join Page</a>
+      <a class="btn outline" style="margin-left:10px" href="mailto:txbrokermatt@gmail.com?subject=Agent%20Inquiry%20-%20Rapid%20Realty%20TX&body=Name%3A%0AEmail%3A%0APhone%3A%0APreferred%20Plan%20(Silver%2FGold)%3A%0ACurrent%20Production%3A%0AGoals%3A%0A">
+        Email the Broker (Fallback)
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Agent Inquiry</h3>
+      <p class="muted">Fill this out and we’ll follow up quickly.</p>
+
+      <div id="hs-agent-form"></div>
+      <div id="hs-fallback" class="muted" style="display:none; margin-top:12px; font-size:13px;">
+        Having trouble loading the form? Use the “Email the Broker (Fallback)” button.
+      </div>
+
+      <script>
+        // Uses your working HubSpot portal + form IDs
+        function renderHubSpotAgentForm() {
+          if (window.hbspt && window.hbspt.forms) {
+            window.hbspt.forms.create({
+              region: "na1",
+              portalId: "245097975",
+              formId: "54ffd9d9-7fcc-4f2c-a5cf-e27b061a2e3b",
+              target: "#hs-agent-form"
+            });
+            return true;
+          }
+          return false;
+        }
+
+        window.addEventListener("load", function () {
+          if (renderHubSpotAgentForm()) return;
+
+          const start = Date.now();
+          const t = setInterval(() => {
+            if (renderHubSpotAgentForm()) clearInterval(t);
+            if (Date.now() - start > 8000) {
+              clearInterval(t);
+              const fb = document.getElementById("hs-fallback");
+              if (fb) fb.style.display = "block";
+            }
+          }, 200);
+        });
+      </script>
+
+      <div class="muted" style="font-size:12px; margin-top:10px">
+        By submitting, you agree to be contacted by call/text/email. Msg/data rates may apply.
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div><strong>Rapid Realty TX</strong> — Texas Real Estate Brokerage</div>
+    <div class="small">Rapid Realty LLC (Lic #0594104) • Broker: Matt Anderson (Lic #0514432)</div>
+    <hr class="sep">
+    <div class="small">© 2026 Rapid Realty TX • <a href="/blog.html">Market Updates</a> • <a href="/join.html">Join</a></div>
+  </div>
+</footer>
+
+<script src="/assets/js/site.js"></script>
+
+<!-- Time / Location / Temp -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const el = document.getElementById("topbar-loc");
+  if (!el) return;
+
+  function formatTime(d) {
+    return d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+  }
+
+  function startClock(prefixText = "") {
+    const tick = () => {
+      const t = formatTime(new Date());
+      el.textContent = prefixText ? `${prefixText} • ${t}` : `Local time: ${t}`;
+    };
+    tick();
+    setInterval(tick, 30000);
+  }
+
+  async function getCityState(lat, lon) {
+    const url = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${encodeURIComponent(lat)}&longitude=${encodeURIComponent(lon)}&localityLanguage=en`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Reverse geocode failed");
+    const data = await res.json();
+    const city =
+      data.city ||
+      data.locality ||
+      data.principalSubdivisionCode ||
+      data.principalSubdivision ||
+      "Your area";
+    const state = data.principalSubdivision || "";
+    return state ? `${city}, ${state}` : city;
+  }
+
+  async function getTempF(lat, lon) {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${encodeURIComponent(lat)}&longitude=${encodeURIComponent(lon)}&current=temperature_2m&temperature_unit=fahrenheit`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Weather fetch failed");
+    const data = await res.json();
+    const temp = data?.current?.temperature_2m;
+    if (typeof temp !== "number") throw new Error("Temp missing");
+    return Math.round(temp);
+  }
+
+  async function runWithCoords(lat, lon) {
+    startClock("Finding your area");
+    try {
+      const [place, tempF] = await Promise.all([getCityState(lat, lon), getTempF(lat, lon)]);
+      startClock(`${place} • ${tempF}°F`);
+    } catch (e) {
+      startClock("Local time");
+    }
+  }
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (pos) => runWithCoords(pos.coords.latitude, pos.coords.longitude),
+      () => startClock("Local time"),
+      { enableHighAccuracy: true, timeout: 8000, maximumAge: 300000 }
+    );
+  } else {
+    startClock("Local time");
+  }
+});
+</script>
+
+</body>
+</html>
 
