@@ -16,9 +16,47 @@
 
   <!-- HubSpot Forms -->
   <script defer src="https://js.hsforms.net/forms/v2.js"></script>
+
+  <style>
+    /* Prevent any accidental overlay from blocking clicks */
+    body { position: relative; }
+    /* Make HubSpot form look like your site (optional) */
+    #hs-join-form .hs-form input,
+    #hs-join-form .hs-form select,
+    #hs-join-form .hs-form textarea {
+      width: 100% !important;
+      padding: 12px 12px !important;
+      border: 1px solid #cfd6df !important;
+      border-radius: 12px !important;
+      font-size: 14px !important;
+      background: #fff !important;
+      box-sizing: border-box !important;
+    }
+
+    #hs-join-form .hs-form textarea { min-height: 120px !important; }
+
+    #hs-join-form .hs-form .hs-button {
+      display: inline-block !important;
+      padding: 12px 18px !important;
+      border-radius: 10px !important;
+      font-weight: 800 !important;
+      background: var(--accent) !important;
+      color: #0b0b0b !important;
+      border: none !important;
+      cursor: pointer !important;
+    }
+
+    #hs-join-form .hs-error-msg,
+    #hs-join-form .hs-error-msgs label {
+      color: #b91c1c !important;
+      font-size: 13px !important;
+      font-weight: 600 !important;
+    }
+  </style>
 </head>
 
 <body>
+
 <header class="topbar">
   <div class="container">
     <span>Frisco, Texas</span>
@@ -32,7 +70,7 @@
       <img src="/assets/images/logo.png" alt="Rapid Realty TX" />
     </a>
 
-    <button class="hamburger" data-menu-btn>Menu</button>
+    <button class="hamburger" type="button" data-menu-btn>Menu</button>
 
     <ul class="menu" data-menu>
       <li><a href="/buy.html">Buy</a></li>
@@ -41,11 +79,12 @@
       <li><a href="/join.html">Join</a></li>
       <li><a href="/cities.html">Cities</a></li>
       <li><a href="/blog.html">Blog</a></li>
-      <li><a class="btn primary" href="#apply">Apply</a></li>
+      <li><a class="btn primary" href="/join.html#apply">Apply</a></li>
     </ul>
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div class="container">
     <div class="kicker">Texas Brokerage • Broker-Led • Simple Plans</div>
@@ -68,6 +107,7 @@
   </div>
 </section>
 
+<!-- VALUE STRIP -->
 <section class="section alt">
   <div class="container">
     <div class="grid cols-3">
@@ -87,6 +127,7 @@
   </div>
 </section>
 
+<!-- PLANS -->
 <section class="section" id="plans">
   <div class="container">
     <div class="h2">Choose Your Plan</div>
@@ -98,6 +139,7 @@
     <div class="spacer"></div>
 
     <div class="grid cols-2">
+      <!-- SILVER -->
       <div class="card">
         <div class="badge">Silver Plan</div>
         <div class="spacer"></div>
@@ -105,7 +147,9 @@
         <p class="muted">Great for newer agents or lower volume—no monthly cost.</p>
 
         <div class="spacer"></div>
-        <div style="font-size:34px;font-weight:900;color:var(--primary)">$0<span style="font-size:14px;font-weight:700;color:var(--muted)">/month</span></div>
+        <div style="font-size:34px;font-weight:900;color:var(--primary)">
+          $0<span style="font-size:14px;font-weight:700;color:var(--muted)">/month</span>
+        </div>
         <div style="font-size:16px;margin-top:6px"><strong>$500</strong> per transaction</div>
 
         <div class="spacer"></div>
@@ -120,6 +164,7 @@
         <a class="btn outline" href="#apply">Apply for Silver</a>
       </div>
 
+      <!-- GOLD -->
       <div class="card" style="border:2px solid rgba(201,162,77,.55)">
         <div class="badge">Gold Plan</div>
         <div class="spacer"></div>
@@ -127,7 +172,9 @@
         <p class="muted">Lower per-transaction cost—ideal once you’re closing consistently.</p>
 
         <div class="spacer"></div>
-        <div style="font-size:34px;font-weight:900;color:var(--primary)">$99<span style="font-size:14px;font-weight:700;color:var(--muted)">/month</span></div>
+        <div style="font-size:34px;font-weight:900;color:var(--primary)">
+          $99<span style="font-size:14px;font-weight:700;color:var(--muted)">/month</span>
+        </div>
         <div style="font-size:16px;margin-top:6px"><strong>$99</strong> per transaction</div>
 
         <div class="spacer"></div>
@@ -145,6 +192,7 @@
   </div>
 </section>
 
+<!-- APPLY -->
 <section class="section alt" id="apply">
   <div class="container split">
     <div>
@@ -158,33 +206,48 @@
         <p><strong>Email:</strong> <a href="mailto:txbrokermatt@gmail.com">txbrokermatt@gmail.com</a></p>
         <p class="muted small">Rapid Realty LLC (Lic #0594104) • Broker: Matt Anderson (Lic #0514432)</p>
       </div>
+
+      <div class="spacer"></div>
+      <a class="btn outline" href="mailto:txbrokermatt@gmail.com?subject=Agent%20Inquiry%20-%20Rapid%20Realty%20TX&body=Name%3A%0AEmail%3A%0APhone%3A%0APlan%20(Silver%2FGold)%3A%0AMessage%3A%0A">Email the Broker (Fallback)</a>
     </div>
 
     <div class="card">
       <h3>Agent Inquiry</h3>
-      <p class="muted">Submit your info and we’ll follow up quickly.</p>
+      <p class="muted">Fill this out and we’ll follow up quickly.</p>
 
+      <!-- HubSpot renders the real form + real submit -->
       <div id="hs-join-form"></div>
 
-      <script>
-        window.addEventListener("load", function () {
-          function tryRender() {
-            if (window.hbspt && window.hbspt.forms) {
-              window.hbspt.forms.create({
-                region: "na1",
-                portalId: "245097975",
-                formId: "54ffd9d9-7fcc-4f2c-a5cf-e27b061a2e3b",
-                target: "#hs-join-form"
-              });
-              return true;
-            }
-            return false;
-          }
+      <div id="hs-fallback" class="muted" style="display:none; margin-top:12px; font-size:13px;">
+        Having trouble loading the form? Use the “Email the Broker (Fallback)” button.
+      </div>
 
-          if (!tryRender()) {
-            const t = setInterval(() => { if (tryRender()) clearInterval(t); }, 200);
-            setTimeout(() => clearInterval(t), 8000);
+      <script>
+        // Render HubSpot form reliably (static sites)
+        function renderHubSpotJoinForm() {
+          if (window.hbspt && window.hbspt.forms) {
+            window.hbspt.forms.create({
+              region: "na1",
+              portalId: "245097975",
+              formId: "54ffd9d9-7fcc-4f2c-a5cf-e27b061a2e3b",
+              target: "#hs-join-form"
+            });
+            return true;
           }
+          return false;
+        }
+
+        window.addEventListener("load", function () {
+          if (renderHubSpotJoinForm()) return;
+
+          const start = Date.now();
+          const t = setInterval(() => {
+            if (renderHubSpotJoinForm()) clearInterval(t);
+            if (Date.now() - start > 8000) {
+              clearInterval(t);
+              document.getElementById("hs-fallback").style.display = "block";
+            }
+          }, 200);
         });
       </script>
 
