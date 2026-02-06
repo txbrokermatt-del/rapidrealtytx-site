@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Texas Cities We Serve | Rapid Realty TX</title>
-  <meta name="description" content="Explore Texas cities we serve including Frisco, Plano, McKinney, Dallas, Allen, Prosper, Little Elm, Southlake, and The Colony. Broker-led buying, selling, and recruiting across DFW." />
+
+  <title>Cities We Serve | Rapid Realty TX</title>
+  <meta name="description" content="Explore Texas cities served by Rapid Realty TX. Local expertise across DFW and major Texas markets." />
+
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
 
 <header class="topbar">
   <div class="container">
-    <span>Frisco, Texas</span>
+    <span id="topbar-loc">Loading location...</span>
     <span>Call/Text: <a href="tel:4696451011">469-645-1011</a> • <a href="mailto:txbrokermatt@gmail.com">txbrokermatt@gmail.com</a></span>
   </div>
 </header>
 
 <nav class="nav">
   <div class="container nav-flex">
+    <!-- LOGO GOES HERE (this fixes your cities page logo question) -->
     <a class="logo" href="/">
-      <img src="/assets/images/logo.png" alt="Rapid Realty TX">
+      <img src="/assets/images/logo.png" alt="Rapid Realty TX" />
     </a>
 
-    <button class="hamburger" data-menu-btn>Menu</button>
+    <button class="hamburger" type="button" data-menu-btn>Menu</button>
 
     <ul class="menu" data-menu>
       <li><a href="/buy.html">Buy</a></li>
@@ -36,137 +41,143 @@
       <li><a href="/join.html">Join</a></li>
       <li><a href="/cities.html">Cities</a></li>
       <li><a href="/blog.html">Blog</a></li>
-      <li><a class="btn primary" href="/contact.html">Contact</a></li>
+      <li><a class="btn primary" href="/#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
 
+<section class="hero">
+  <div class="container">
+    <div class="kicker">Texas Brokerage • DFW + Major Metros</div>
+    <div class="spacer"></div>
+    <h1>Texas Cities We Serve</h1>
+    <p>
+      Rapid Realty TX helps buyers, sellers, and agents across DFW and high-growth Texas markets.
+      Start with the most requested cities below and expand over time for SEO.
+    </p>
 
-<!-- Header / Intro -->
+    <div class="cta">
+      <a class="btn primary" href="#city-list">Browse Cities</a>
+      <a class="btn outline" href="/#contact">Talk to a Broker</a>
+    </div>
+
+    <div class="spacer"></div>
+    <div class="small">Rapid Realty LLC (Lic #0594104) • Broker: Matt Anderson (Lic #0514432)</div>
+  </div>
+</section>
+
 <section class="section alt">
   <div class="container">
-    <div class="h2">Cities We Serve in Texas</div>
-    <div class="lede">
-      Rapid Realty TX is a broker-led Texas real estate brokerage serving the Dallas–Fort Worth area and surrounding growth markets.
-      Whether you’re buying, selling, investing, or building an agent career, we bring strategy, strong negotiation, and clean execution.
-    </div>
-    <div class="spacer"></div>
     <div class="grid cols-3">
       <div class="card">
-        <h3>For Buyers</h3>
-        <p>Tour plans, offer strategy, inspection negotiation, and neighborhood guidance across DFW.</p>
+        <h3>DFW Focus</h3>
+        <p>Frisco-first with coverage across Collin, Denton, Dallas, and Tarrant counties.</p>
       </div>
       <div class="card">
-        <h3>For Sellers</h3>
-        <p>Pricing strategy, prep plan, premium presentation, and contract terms built for leverage.</p>
+        <h3>Relocation Friendly</h3>
+        <p>Neighborhood guidance, school considerations, commute strategy, and builder support.</p>
       </div>
       <div class="card">
-        <h3>For Agents</h3>
-        <p>Broker-led support, systems, training, and accountability designed to grow your business.</p>
+        <h3>Investor Mindset</h3>
+        <p>Rent comps, cap-rate thinking, and long-term value strategy for smart purchases.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- City Grid -->
-<section class="section">
+<section class="section" id="city-list">
   <div class="container">
-    <div class="h2">Featured DFW Markets</div>
-    <div class="lede">
-      Start with these city pages for local guidance and market-specific strategy.
-      (We can expand this into 20–100 Texas city pages as you grow SEO.)
-    </div>
-
+    <div class="h2">Featured City Pages</div>
+    <div class="lede">Click a city to learn about neighborhoods, lifestyle, and the buying/selling process.</div>
     <div class="spacer"></div>
 
     <div class="grid cols-3">
-      <a class="card" href="/city-Dallas.html">
-        <h3>Dallas</h3>
-        <p>Urban living, strong job centers, and diverse neighborhoods across DFW’s core.</p>
-      </a>
-
-      <a class="card" href="/city-Frisco.html">
+      <!-- Update/expand these links to match your actual city page filenames -->
+      <a class="card" href="/city-frisco.html">
         <h3>Frisco</h3>
-        <p>High-growth suburbs, top schools, newer communities, and strong resale demand.</p>
+        <p class="muted">DFW growth hub • Luxury + relocation</p>
       </a>
 
-      <a class="card" href="/city-Plano.html">
+      <a class="card" href="/city-plano.html">
         <h3>Plano</h3>
-        <p>Established neighborhoods, major employers, and great access across North Dallas.</p>
+        <p class="muted">Established neighborhoods • Strong schools</p>
       </a>
 
-      <a class="card" href="/city-McKinney.html">
+      <a class="card" href="/city-mckinney.html">
         <h3>McKinney</h3>
-        <p>Historic charm with new development—popular for families and long-term value.</p>
+        <p class="muted">Historic charm • New construction</p>
       </a>
 
-      <a class="card" href="/city-Allen.html">
-        <h3>Allen</h3>
-        <p>Convenient commuting, strong schools, and consistent demand in North DFW.</p>
-      </a>
-
-      <a class="card" href="/city-Little Elm.html">
-        <h3>Little Elm</h3>
-        <p>Lake-life vibe, rapid growth, and newer communities with competitive pricing.</p>
-      </a>
-
-      <a class="card" href="/city-Prosper.html">
+      <a class="card" href="/city-prosper.html">
         <h3>Prosper</h3>
-        <p>Luxury-leaning growth market—larger lots, newer builds, and strong appreciation.</p>
+        <p class="muted">Luxury • Master-planned communities</p>
       </a>
 
-      <a class="card" href="/city-Southlake.html">
-        <h3>Southlake</h3>
-        <p>Premier luxury market with top-tier lifestyle, schools, and long-term desirability.</p>
+      <a class="card" href="/city-celina.html">
+        <h3>Celina</h3>
+        <p class="muted">High growth • Land + new builds</p>
       </a>
 
-      <a class="card" href="/city-The Colony.html">
+      <a class="card" href="/city-little-elm.html">
+        <h3>Little Elm</h3>
+        <p class="muted">Lake living • Value buys</p>
+      </a>
+
+      <a class="card" href="/city-the-colony.html">
         <h3>The Colony</h3>
-        <p>Central access, growth, and proximity to major retail, business, and entertainment.</p>
+        <p class="muted">Convenient • Grandscape nearby</p>
+      </a>
+
+      <a class="card" href="/city-flower-mound.html">
+        <h3>Flower Mound</h3>
+        <p class="muted">Denton County • Premium suburbs</p>
+      </a>
+
+      <a class="card" href="/city-allen.html">
+        <h3>Allen</h3>
+        <p class="muted">Great parks • Family friendly</p>
       </a>
     </div>
-  </div>
-</section>
 
-<!-- How We Help (content section) -->
-<section class="section alt">
-  <div class="container split">
-    <div>
-      <div class="h2">How We Help in Every City</div>
-      <div class="lede">
-        Market conditions vary by neighborhood and price point. Our approach stays consistent:
-        build leverage, reduce risk, and protect your timeline.
-      </div>
-
-      <ul class="list">
-        <li><span class="check">✓</span><span><strong>Pricing and comps</strong> reviewed with real data—not guesswork.</span></li>
-        <li><span class="check">✓</span><span><strong>Offer strategy</strong> aligned with seller motivations and current market speed.</span></li>
-        <li><span class="check">✓</span><span><strong>Negotiation</strong> focused on terms, repairs, credits, and risk reduction.</span></li>
-        <li><span class="check">✓</span><span><strong>Clear communication</strong> so you always know next steps.</span></li>
-      </ul>
-
-      <div class="spacer"></div>
-      <a class="btn primary" href="/#contact">Talk to a Broker</a>
-      <a class="btn outline" href="/sell.html" style="margin-left:10px">Selling Strategy</a>
-    </div>
+    <div class="spacer"></div>
 
     <div class="card">
       <h3>Want your city added?</h3>
       <p class="muted">
-        We can expand into additional Texas markets with dedicated city pages (SEO + local strategy).
-        Tell us where you want coverage next.
+        We can build dedicated SEO city pages with population, schools, lifestyle, neighborhoods,
+        market notes, and internal links.
       </p>
       <div class="spacer"></div>
-      <div class="grid">
-        <div class="badge">Austin</div>
-        <div class="badge">Houston</div>
-        <div class="badge">San Antonio</div>
-        <div class="badge">Fort Worth</div>
-        <div class="badge">Arlington</div>
-        <div class="badge">Carrollton</div>
-      </div>
+      <a class="btn primary" href="/#contact">Request a City Page</a>
+      <a class="btn outline" href="/join.html" style="margin-left:10px">Join Our Brokerage</a>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container split">
+    <div>
+      <div class="h2">How We Help In Every City</div>
+      <div class="lede">Same clean process, local execution, and broker-led guidance.</div>
+      <ul class="list">
+        <li><span class="check">✓</span><span><strong>Buying:</strong> tour plan, offer strategy, inspection negotiation</span></li>
+        <li><span class="check">✓</span><span><strong>Selling:</strong> pricing, prep checklist, marketing + terms negotiation</span></li>
+        <li><span class="check">✓</span><span><strong>Relocation:</strong> community fit, commute strategy, builder guidance</span></li>
+      </ul>
       <div class="spacer"></div>
-      <a class="btn primary" href="/#contact">Request a City</a>
+      <a class="btn primary" href="/#contact">Get Help Now</a>
+    </div>
+
+    <div class="card">
+      <h3>Quick Links</h3>
+      <p class="muted">Popular next steps.</p>
+      <div class="spacer"></div>
+      <div class="grid">
+        <a class="badge" href="/buy.html">Buy in Texas</a>
+        <a class="badge" href="/sell.html">Sell in Texas</a>
+        <a class="badge" href="/join.html">Join Rapid Realty TX</a>
+        <a class="badge" href="/#contact">Contact</a>
+      </div>
     </div>
   </div>
 </section>
@@ -181,6 +192,72 @@
 </footer>
 
 <script src="/assets/js/site.js"></script>
+
+<!-- Time / Location / Temp -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const el = document.getElementById("topbar-loc");
+  if (!el) return;
+
+  function formatTime(d) {
+    return d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+  }
+
+  function startClock(prefixText = "") {
+    const tick = () => {
+      const t = formatTime(new Date());
+      el.textContent = prefixText ? `${prefixText} • ${t}` : `Local time: ${t}`;
+    };
+    tick();
+    setInterval(tick, 30000);
+  }
+
+  async function getCityState(lat, lon) {
+    const url = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${encodeURIComponent(lat)}&longitude=${encodeURIComponent(lon)}&localityLanguage=en`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Reverse geocode failed");
+    const data = await res.json();
+    const city =
+      data.city ||
+      data.locality ||
+      data.principalSubdivisionCode ||
+      data.principalSubdivision ||
+      "Your area";
+    const state = data.principalSubdivision || "";
+    return state ? `${city}, ${state}` : city;
+  }
+
+  async function getTempF(lat, lon) {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${encodeURIComponent(lat)}&longitude=${encodeURIComponent(lon)}&current=temperature_2m&temperature_unit=fahrenheit`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Weather fetch failed");
+    const data = await res.json();
+    const temp = data?.current?.temperature_2m;
+    if (typeof temp !== "number") throw new Error("Temp missing");
+    return Math.round(temp);
+  }
+
+  async function runWithCoords(lat, lon) {
+    startClock("Finding your area");
+    try {
+      const [place, tempF] = await Promise.all([getCityState(lat, lon), getTempF(lat, lon)]);
+      startClock(`${place} • ${tempF}°F`);
+    } catch (e) {
+      startClock("Local time");
+    }
+  }
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (pos) => runWithCoords(pos.coords.latitude, pos.coords.longitude),
+      () => startClock("Local time"),
+      { enableHighAccuracy: true, timeout: 8000, maximumAge: 300000 }
+    );
+  } else {
+    startClock("Local time");
+  }
+});
+</script>
+
 </body>
 </html>
-
