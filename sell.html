@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- HubSpot Forms (load once) -->
-  <script defer src="https://js.hsforms.net/forms/v2.js"></script>
-
   <link rel="icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -12,8 +9,9 @@
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   <title>Sell Your Home in Texas | Rapid Realty TX</title>
-  <meta name="description" content="Sell your home in Texas with expert pricing, marketing, negotiation, and inspection strategy. Serving DFW and Texas markets." />
+  <meta name="description" content="Seller strategy, pricing, prep checklist, marketing, and negotiation across DFW and major Texas markets." />
 
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -22,17 +20,19 @@
 
 <header class="topbar">
   <div class="container">
-    <span>Frisco, Texas</span>
-    <span>Call/Text: <a href="tel:4696451011">469-645-1011</a></span>
+    <span id="topbar-loc">Loading location...</span>
+    <span>Call/Text: <a href="tel:4696451011">469-645-1011</a> • <a href="mailto:txbrokermatt@gmail.com">txbrokermatt@gmail.com</a></span>
   </div>
 </header>
 
 <nav class="nav">
   <div class="container nav-flex">
     <a class="logo" href="/">
-      <img src="/assets/images/logo.png" alt="Rapid Realty TX">
+      <img src="/assets/images/logo.png" alt="Rapid Realty TX" />
     </a>
+
     <button class="hamburger" data-menu-btn>Menu</button>
+
     <ul class="menu" data-menu>
       <li><a href="/buy.html">Buy</a></li>
       <li><a href="/sell.html">Sell</a></li>
@@ -40,101 +40,165 @@
       <li><a href="/join.html">Join</a></li>
       <li><a href="/cities.html">Cities</a></li>
       <li><a href="/blog.html">Blog</a></li>
-      <li><a class="btn primary" href="#sell-form">Contact</a></li>
+      <li><a class="btn primary" href="/#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
 
+<section class="hero" style="padding:90px 0 70px;">
+  <div class="container">
+    <div class="kicker">Texas Sellers • Pricing + Terms • Broker-Led</div>
+    <div class="spacer"></div>
+    <h1>Sell With Leverage.<br>Price Right. Negotiate Strong.</h1>
+    <p>
+      Rapid Realty TX helps you sell with clear pricing strategy, premium presentation, and negotiation that protects your money and timeline.
+      Broker-led guidance across DFW and major Texas markets.
+    </p>
+    <div class="cta">
+      <a class="btn primary" href="/#contact">Get a Seller Strategy Call</a>
+      <a class="btn outline" href="/cities.html">Browse Cities</a>
+    </div>
+    <div class="spacer"></div>
+    <div class="small">Rapid Realty LLC (Lic #0594104) • Broker: Matt Anderson (Lic #0514432)</div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container split">
-
-    <!-- LEFT CONTENT -->
     <div>
-      <div class="h2">Sell Your Home in Texas</div>
-      <div class="lede">
-        Strategic pricing, professional marketing, and strong negotiation — built to protect your equity.
-      </div>
+      <div class="h2">Seller Strategy</div>
+      <div class="lede">A clean plan from prep to closing — built to maximize your outcome.</div>
 
       <ul class="list">
-        <li><span class="check">✓</span><span><strong>Pricing Strategy</strong> based on market data and buyer behavior.</span></li>
-        <li><span class="check">✓</span><span><strong>Preparation & Marketing</strong> to maximize showings and demand.</span></li>
-        <li><span class="check">✓</span><span><strong>Negotiation & Inspections</strong> handled to protect your bottom line.</span></li>
-        <li><span class="check">✓</span><span><strong>Clear Communication</strong> from listing to closing.</span></li>
+        <li><span class="check">✓</span><span><strong>Pricing Strategy</strong> based on comps, demand, and your timeline.</span></li>
+        <li><span class="check">✓</span><span><strong>Prep + Presentation</strong> to create attention and stronger offers.</span></li>
+        <li><span class="check">✓</span><span><strong>Marketing Plan</strong> that positions your home where buyers are looking.</span></li>
+        <li><span class="check">✓</span><span><strong>Offer + Inspection Negotiation</strong> focused on terms, repairs, and risk reduction.</span></li>
       </ul>
 
       <div class="spacer"></div>
-
-      <div class="card">
-        <h3>What We’ll Cover</h3>
-        <div class="spacer"></div>
-        <div class="grid">
-          <div class="badge">Home Value</div>
-          <div class="badge">Timing</div>
-          <div class="badge">Prep & Repairs</div>
-          <div class="badge">Showings</div>
-          <div class="badge">Offers</div>
-          <div class="badge">Inspections</div>
-        </div>
-      </div>
+      <a class="btn primary" href="/#contact">Talk to the Broker</a>
     </div>
 
-    <!-- RIGHT FORM -->
-    <div class="card" id="sell-form">
-      <h3>Get a Seller Strategy Call</h3>
-      <p class="muted">Fill this out and we’ll follow up quickly.</p>
-
-      <!-- HubSpot Form -->
-      <div id="hs-sell-form"></div>
-
-      <!-- Fallback -->
+    <div class="card">
+      <h3>Seller Checklist</h3>
+      <p class="muted">Bring these to your first call.</p>
       <div class="spacer"></div>
-      <a class="btn outline"
-         href="mailto:txbrokermatt@gmail.com?subject=Seller%20Inquiry%20-%20Rapid%20Realty%20TX&body=Name:%0AEmail:%0APhone:%0AProperty%20Address:%0AMessage:">
-        Email the Broker (Fallback)
-      </a>
-
-      <script>
-        function renderSellForm() {
-          if (window.hbspt && window.hbspt.forms) {
-            window.hbspt.forms.create({
-              region: "na1",
-              portalId: "245097975",
-              formId: "54ffd9d9-7fcc-4f2c-a5cf-e27b061a2e3b",
-              target: "#hs-sell-form"
-            });
-            return true;
-          }
-          return false;
-        }
-
-        window.addEventListener("load", function () {
-          if (renderSellForm()) return;
-
-          const start = Date.now();
-          const t = setInterval(() => {
-            if (renderSellForm()) clearInterval(t);
-            if (Date.now() - start > 8000) clearInterval(t);
-          }, 200);
-        });
-      </script>
-
-      <div class="muted" style="font-size:12px; margin-top:10px">
-        By submitting, you agree to be contacted by call/text/email. Msg/data rates may apply.
+      <div class="grid">
+        <div class="badge">What’s my home worth?</div>
+        <div class="badge">Repairs / Inspection notes</div>
+        <div class="badge">Showings plan</div>
+        <div class="badge">Timeline</div>
+        <div class="badge">Net sheet</div>
+        <div class="badge">Offer review priorities</div>
       </div>
     </div>
+  </div>
+</section>
 
+<section class="section alt">
+  <div class="container">
+    <div class="h2">What You Get</div>
+    <div class="lede">Broker-led negotiation, tight execution, and clear communication.</div>
+    <div class="spacer"></div>
+
+    <div class="grid cols-3">
+      <div class="card">
+        <h3>Premium Presentation</h3>
+        <p>We position the listing to create attention and leverage in the first week.</p>
+      </div>
+      <div class="card">
+        <h3>Terms-First Negotiation</h3>
+        <p>Price is only part of it — we negotiate for clean terms and less risk.</p>
+      </div>
+      <div class="card">
+        <h3>Clean Execution</h3>
+        <p>Deadlines tracked, buyer managed, and a process that protects your timeline.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 <footer class="footer">
   <div class="container">
-    <div><strong>Rapid Realty TX</strong></div>
-    <div class="small">
-      Rapid Realty LLC (Lic #0594104) • Broker: Matt Anderson (Lic #0514432)
-    </div>
+    <div><strong>Rapid Realty TX</strong> — Texas Real Estate Brokerage</div>
+    <div class="small">Rapid Realty LLC (Lic #0594104) • Broker: Matt Anderson (Lic #0514432)</div>
   </div>
 </footer>
 
 <script src="/assets/js/site.js"></script>
+
+<!-- Time / Location / Temp -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const el = document.getElementById("topbar-loc");
+  if (!el) return;
+
+  function formatTime(d) {
+    return d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+  }
+
+  function startClock(prefixText = "") {
+    const tick = () => {
+      const t = formatTime(new Date());
+      el.textContent = prefixText ? `${prefixText} • ${t}` : `Local time: ${t}`;
+    };
+    tick();
+    setInterval(tick, 30000);
+  }
+
+  async function getCityState(lat, lon) {
+    const url = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${encodeURIComponent(lat)}&longitude=${encodeURIComponent(lon)}&localityLanguage=en`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Reverse geocode failed");
+    const data = await res.json();
+    const city =
+      data.city ||
+      data.locality ||
+      data.principalSubdivisionCode ||
+      data.principalSubdivision ||
+      "Your area";
+    const state = data.principalSubdivision || "";
+    return state ? `${city}, ${state}` : city;
+  }
+
+  async function getTempF(lat, lon) {
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${encodeURIComponent(lat)}&longitude=${encodeURIComponent(lon)}&current=temperature_2m&temperature_unit=fahrenheit`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Weather fetch failed");
+    const data = await res.json();
+    const temp = data?.current?.temperature_2m;
+    if (typeof temp !== "number") throw new Error("Temp missing");
+    return Math.round(temp);
+  }
+
+  async function runWithCoords(lat, lon) {
+    startClock("Finding your area");
+
+    try {
+      const [place, tempF] = await Promise.all([
+        getCityState(lat, lon),
+        getTempF(lat, lon)
+      ]);
+
+      const prefix = `${place} • ${tempF}°F`;
+      startClock(prefix);
+    } catch (e) {
+      startClock("Local time");
+    }
+  }
+
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (pos) => runWithCoords(pos.coords.latitude, pos.coords.longitude),
+      () => startClock("Local time"),
+      { enableHighAccuracy: true, timeout: 8000, maximumAge: 300000 }
+    );
+  } else {
+    startClock("Local time");
+  }
+});
+</script>
+
 </body>
 </html>
