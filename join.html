@@ -294,22 +294,26 @@
       <p class="muted">Submit your info and we’ll follow up quickly.</p>
 
       <div id="hs-join-form"></div>
-
-      <script>
-        window.addEventListener("load", function () {
-          // HubSpot script is loaded via <head> (defer)
-          if (window.hbspt && window.hbspt.forms) {
-            window.hbspt.forms.create({
-              region: "na1",
-              portalId: "245097975",
-              formId: "54ffd9d9-7fcc-4f2c-a5cf-e27b061a2e3b",
-              target: "#hs-join-form"
-            });
-          }
+<script>
+  (function () {
+    var tries = 0;
+    function renderHS() {
+      tries++;
+      if (window.hbspt && window.hbspt.forms) {
+        window.hbspt.forms.create({
+          region: "na1",
+          portalId: "245097975",
+          formId: "54ffd9d9-7fcc-4f2c-a5cf-e27b061a2e3b",
+          target: "#hs-join-form"
         });
-      </script>
-
-      <div class="muted" style="font-size:12px; margin-top:10px">
+        return;
+      }
+      if (tries < 15) setTimeout(renderHS, 200);
+    }
+    window.addEventListener("load", renderHS);
+  })();
+</script>
+<div class="muted" style="font-size:12px; margin-top:10px">
         By submitting, you agree to be contacted by call/text/email. Msg/data rates may apply.
       </div>
     </div>
