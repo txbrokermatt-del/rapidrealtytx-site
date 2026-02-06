@@ -283,7 +283,17 @@
       <p class="muted">This form can be wired to Formspree / HubSpot / GoHighLevel.</p>
 
       <!-- Replace action="#" with your Formspree/CRM endpoint -->
-      <form class="form" method="POST" action="#">
+      <!-- START HUBSPOT FORM -->
+<script charset="utf-8" src="//js.hsforms.net/forms/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "YOUR_PORTAL_ID",
+    formId: "YOUR_FORM_ID"
+  });
+</script>
+<!-- END HUBSPOT FORM -->
+
         <input class="input" name="name" placeholder="Full Name" required>
         <input class="input" name="email" type="email" placeholder="Email" required>
         <input class="input" name="phone" placeholder="Phone">
