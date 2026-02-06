@@ -216,3 +216,37 @@ hr.sep{border:0;border-top:1px solid rgba(255,255,255,.15);margin:10px 0}
 #hs-join-form .hs-form-required{
   color: #b91c1c !important;
 }
+/* HubSpot submit button + layout fixes */
+#hs-join-form .hs_submit,
+#hs-join-form .hs-submit,
+#hs-join-form .actions,
+#hs-join-form .hs-form-actions {
+  margin-top: 12px !important;
+}
+
+#hs-join-form input[type="submit"],
+#hs-join-form button[type="submit"],
+#hs-join-form .hs-button {
+  display: inline-block !important;
+  width: 100% !important;            /* full-width like your buttons */
+  padding: 12px 18px !important;
+  border-radius: 10px !important;
+  font-weight: 900 !important;
+  background: var(--accent) !important;
+  color: #0b0b0b !important;
+  border: none !important;
+  cursor: pointer !important;
+  appearance: none !important;
+  -webkit-appearance: none !important;
+}
+
+#hs-join-form input[type="submit"]:hover,
+#hs-join-form button[type="submit"]:hover,
+#hs-join-form .hs-button:hover {
+  filter: brightness(.96) !important;
+}
+
+/* If HubSpot wraps the button weirdly, ensure it isn't clipped */
+#hs-join-form form {
+  overflow: visible !important;
+}
