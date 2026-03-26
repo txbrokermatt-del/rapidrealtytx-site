@@ -4,14 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>REPLACE TITLE</title>
-<meta name="description" content="REPLACE DESCRIPTION">
+<title>Best Neighborhoods in Frisco</title>
+<meta name="description" content="{{DESCRIPTION}}">
 
 <link rel="icon" href="/favicon.ico">
 
 <style>
 body{margin:0;font-family:Inter,Arial;background:#0f2240;color:white}
+
 .container{max-width:1200px;margin:auto;padding:40px 20px}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+background:#0f2240;
+}
+
+.logo{height:45px}
 
 .hero{
 background:linear-gradient(rgba(15,34,64,.92),rgba(15,34,64,.85)),
@@ -19,35 +30,55 @@ url('/assets/images/dfw-hero.jpg') center/cover no-repeat;
 padding:100px 20px;
 }
 
-h1{font-size:56px;margin-bottom:20px}
-h2{color:#0f2240}
+.hero-grid{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:40px;
+align-items:center;
+}
 
-p{color:#dbe4f0;font-size:18px;max-width:700px}
+h1{font-size:56px;margin-bottom:20px}
+
+p{color:#dbe4f0;font-size:18px}
 
 .btn{
-display:inline-block;
 background:#c8a45d;
 color:#0f2240;
 padding:15px 25px;
 border-radius:30px;
 font-weight:bold;
 text-decoration:none;
-margin:10px 10px 0 0;
+margin-right:10px;
+display:inline-block;
 }
 
-.section{background:white;color:#111;padding:70px 20px}
-
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:#f5f7fb;padding:25px;border-radius:10px}
-
-.form-box{
-background:#fff;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 30px rgba(0,0,0,.1);
+.card{
+background:white;
+color:#111;
+padding:25px;
+border-radius:15px;
 }
 
-@media(max-width:800px){
+.section{
+background:white;
+color:#111;
+padding:70px 20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.feature{
+background:#f5f7fb;
+padding:20px;
+border-radius:10px;
+}
+
+@media(max-width:900px){
+.hero-grid{grid-template-columns:1fr}
 h1{font-size:36px}
 .grid{grid-template-columns:1fr}
 }
@@ -56,44 +87,27 @@ h1{font-size:36px}
 
 <body>
 
+<!-- TOP BAR -->
+<div class="topbar">
+<img src="/assets/images/logo.png" class="logo">
+<div>Call/Text: 469-645-1011</div>
+</div>
+
 <!-- HERO -->
 <div class="hero">
-<div class="container">
+<div class="container hero-grid">
 
-<img src="/assets/images/logo.png" style="height:50px;margin-bottom:20px">
+<div>
+<h1>Best Areas to live in Frisco</h1>
+<p>Compare neighborhoods and find the perfect fit.</p>
 
-<h1>REPLACE HEADLINE</h1>
-
-<p>REPLACE SUBTEXT</p>
-
-<a href="#form" class="btn">Get My Home List</a>
-<a href="tel:14696451011" class="btn">Call or Text Matt</a>
-
-</div>
+<a href="/dfw-buyers" class="btn">Get My Home List</a>
+<a href="tel:14696451011" class="btn">Call Matt</a>
 </div>
 
-<!-- VALUE SECTION -->
-<div class="section">
-<div class="container">
-
-<h2>Why Buyers Choose Us</h2>
-
-<div class="grid">
-<div class="card">Expert negotiation</div>
-<div class="card">Local market knowledge</div>
-<div class="card">Buyer rebate options</div>
-</div>
-
-</div>
-</div>
-
-<!-- FORM SECTION -->
-<div class="section" style="background:#f9fafc;" id="form">
-<div class="container">
-
-<h2>Get Your Custom Home List</h2>
-
-<div class="form-box">
+<div class="card">
+<h2>Get a Custom Buyer Plan</h2>
+<p>Find the right home and negotiate like a pro.</p>
 
 <script src="//js.hsforms.net/forms/embed/v2.js"></script>
 <script>
@@ -108,5 +122,16 @@ formId: "54ffd9d9-7fcc-4f2c-a5cf-e27b061a2e3b"
 </div>
 </div>
 
-</body>
-</html>
+<!-- VALUE -->
+<div class="section">
+<div class="container">
+
+<h2>Why Work With Us</h2>
+
+<div class="grid">
+<div class="feature">Local market expert</div>
+<div class="feature">Negotiation strategy</div>
+<div class="feature">Buyer rebate options</div>
+</div>
+
+</div>
