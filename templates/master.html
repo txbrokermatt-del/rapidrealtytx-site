@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESCRIPTION}}">
+
+<link rel="icon" href="/favicon.ico">
+
+<style>
+body{margin:0;font-family:Inter,Arial;background:#0f2240;color:white}
+
+.container{max-width:1200px;margin:auto;padding:40px 20px}
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+background:#0f2240;
+}
+
+.logo{height:45px}
+
+.hero{
+background:linear-gradient(rgba(15,34,64,.92),rgba(15,34,64,.85)),
+url('/assets/images/dfw-hero.jpg') center/cover no-repeat;
+padding:100px 20px;
+}
+
+.hero-grid{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:40px;
+align-items:center;
+}
+
+h1{font-size:56px;margin-bottom:20px}
+
+p{color:#dbe4f0;font-size:18px}
+
+.btn{
+background:#c8a45d;
+color:#0f2240;
+padding:15px 25px;
+border-radius:30px;
+font-weight:bold;
+text-decoration:none;
+margin-right:10px;
+display:inline-block;
+}
+
+.card{
+background:white;
+color:#111;
+padding:25px;
+border-radius:15px;
+}
+
+.section{
+background:white;
+color:#111;
+padding:70px 20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.feature{
+background:#f5f7fb;
+padding:20px;
+border-radius:10px;
+}
+
+@media(max-width:900px){
+.hero-grid{grid-template-columns:1fr}
+h1{font-size:36px}
+.grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+<img src="/assets/images/logo.png" class="logo">
+<div>Call/Text: 469-645-1011</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+<div class="container hero-grid">
+
+<div>
+<h1>{{HEADLINE}}</h1>
+<p>{{SUBTEXT}}</p>
+
+<a href="/dfw-buyers" class="btn">Get My Home List</a>
+<a href="tel:14696451011" class="btn">Call Matt</a>
+</div>
+
+<div class="card">
+<h2>Get a Custom Buyer Plan</h2>
+<p>Tell us what you're looking for and we'll send homes + strategy.</p>
+
+<script src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+hbspt.forms.create({
+portalId: "245097975",
+formId: "54ffd9d9-7fcc-4f2c-a5cf-e27b061a2e3b"
+});
+</script>
+
+</div>
+
+</div>
+</div>
+
+<!-- VALUE -->
+<div class="section">
+<div class="container">
+
+<h2>Why Work With Us</h2>
+
+<div class="grid">
+<div class="feature">Local market expert</div>
+<div class="feature">Negotiation strategy</div>
+<div class="feature">Buyer rebate options</div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
